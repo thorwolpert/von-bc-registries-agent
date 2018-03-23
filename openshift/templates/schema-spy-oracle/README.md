@@ -12,6 +12,6 @@ The [schema-spy-oracle-deploy](./schema-spy-oracle-deploy.json) template perform
 
 The custom [Caddyfile](./Caddyfile) defines the routes and basic authentication that allow OpenShift to perform health checks while protecting the database documentation.
 
-The [schema-spy-oracle-deploy.overrides.sh](./schema-spy-oracle-deploy.overrides.sh) script generates the configuration file for the config map which contains the Caddyfile, and generates a set of random credentials for the deployment.
+The [schema-spy-oracle-deploy.overrides.sh](../../schema-spy-oracle-deploy.overrides.sh) script generates the configuration file for the config map which contains the Caddyfile, and generates a set of random credentials for the deployment.
 
 When an instance of the SchemaSpy image is started, it's Caddyfile is replaced with a copy of the one from the config map, and the basic authorization credentials are sourced from environment variables that are retrieving their values from secrets.
