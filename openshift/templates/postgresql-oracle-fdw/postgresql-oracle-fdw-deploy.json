@@ -320,14 +320,14 @@
             "displayName": "Foreign Data Schema",
             "description": "Oracle schema from which to get the data.",
             "required": true,
-            "value": "colin_mgr_uat"
+            "value": "COLIN_MGR_UAT"
         },
         {
             "name": "FDW_FOREIGN_SERVER",
             "displayName": "Foreign Data Server",
             "description": "The Oracle server reference.",
             "required": true,
-            "value": "142.34.88.17:1521"
+            "value": "142.34.88.17:1521/CUAT.bcgov"
         },
         {
             "name": "FDW_USER",

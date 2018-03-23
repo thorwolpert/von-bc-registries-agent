@@ -15,9 +15,9 @@ FDW_FOREIGN_SCHEMA
 * The name of the schema in the Oracle database.  The value is case sensitive.
 
 FDW_FOREIGN_SERVER
-* The connection string for the Oracle database, in the form <host>:<port>/<listener service name>.    The value is case sensitive.
-* <host> can be the DNS or IP address for the server.
-* <listener service name> comes from the listener service configuration on the Oracle server.
+* The connection string for the Oracle database, in the form `<host>:<port>/<listener service name>`.    The value is case sensitive.
+* `<host>` can be the DNS or IP address for the server.
+* `<listener service name>` comes from the listener service configuration on the Oracle server.
 For example, the configuration from `inter:/dsk01/app/tnsadmin/listener.ora`, where the service name is `CUAT.bcgov`.
 ```
 (SID_DESC =
