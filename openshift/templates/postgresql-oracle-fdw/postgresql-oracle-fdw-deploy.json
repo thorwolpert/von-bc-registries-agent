@@ -95,7 +95,7 @@
                                         }
                                     },
                                     {
-                                        "name": "POSTGRESQL_ADMIN_PASSWORD ",
+                                        "name": "POSTGRESQL_ADMIN_PASSWORD",
                                         "valueFrom": {
                                             "secretKeyRef": {
                                                 "name": "${NAME}",
