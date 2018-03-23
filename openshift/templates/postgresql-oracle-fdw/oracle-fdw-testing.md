@@ -2,11 +2,12 @@ Configuration:
 
 POSTGRESQL_USER
 POSTGRESQL_PASSWORD
-* The credentials for the PostgreSQL database that will be hosting the foriegn schema.
-* These should be differant than the credentials used for the Oracle database.
+POSTGRESQL_ADMIN_PASSWORD
+* The credentials for the PostgreSQL database that will be hosting the foreign schema.
+* These should be different than the credentials used for the Oracle database.
 
 POSTGRESQL_DATABASE
-* The name of the PostgreSQL database that will be hosting the foriegn schema.
+* The name of the PostgreSQL database that will be hosting the foreign schema.
 
 FDW_NAME
 * The name to give to the foreign server entry registered in the PostgreSQL database.  The name is a bit misleading.
@@ -15,9 +16,9 @@ FDW_FOREIGN_SCHEMA
 * The name of the schema in the Oracle database.  The value is case sensitive.
 
 FDW_FOREIGN_SERVER
-* The connection string for the Oracle database, in the form <host>:<port>/<listener service name>.    The value is case sensitive.
-* <host> can be the DNS or IP address for the server.
-* <listener service name> comes from the listener service configuration on the Oracle server.
+* The connection string for the Oracle database, in the form `<host>:<port>/<listener service name>`.    The value is case sensitive.
+* `<host>` can be the DNS or IP address for the server.
+* `<listener service name>` comes from the listener service configuration on the Oracle server.
 For example, the configuration from `inter:/dsk01/app/tnsadmin/listener.ora`, where the service name is `CUAT.bcgov`.
 ```
 (SID_DESC =
@@ -33,7 +34,6 @@ FDW_PASS
 
 FDW_SCHEMA
 * The name of the schema in the PostgreSQL database.  The objects from the Oracle side will be created within this schema.
-
 
 Testing:
 
@@ -174,6 +174,3 @@ BC_REGISTRIES=> select * from bc_registries.xpro_type;
  FED         | FEDERAL     | Federal Company
 (3 rows)
 ```
-
-
-
