@@ -46,7 +46,8 @@ To accomplish this, we will use OpenShift port forwarding.  Some additional deta
 - Create a new Server and given it a name.
 - On the connection tab enter;
   - Host Name: 127.0.0.1
-  - Leave everything else as it's default.  Credentials are handled through the pod.
+  - User Name: Enter the randomly generated username assigned to the database contained in the `postgresql-oracle-fdw.database-user` secret.
+  - Password: Enter the randomly generated password assigned to the database contained in the `postgresql-oracle-fdw.database-password` secret.
 - Click save.
 
 You should now be able to make queries.
