@@ -6,10 +6,6 @@
 # NAME=schema-spy-oracle
 # DATABASE_DEPLOYMENT_NAME=postgresql-oracle-fdw
 # DATABASE_TYPE=orathin
-# DATABASE_NAME=CUAT
-# DATABASE_SCHEMA=COLIN_MGR_UAT
-# DATABASE_CATALOG=CUAT.bcgov
-# DATABASE_HOST=142.34.88.17:1521
 # DATABASE_DRIVER=lib/ora-jdbc.jar
 # OUTPUT_PATH=/var/www/html/doc
 # SCHEMASPY_USER=[a-zA-Z_][a-zA-Z0-9_]{10}
@@ -23,3 +19,17 @@ APPLICATION_DOMAIN=schema-spy-oracle-devex-von-bc-registries-agent-prod.pathfind
 # CONFIG_MOUNT_PATH=/etc/
 # CPU_LIMIT=2
 # MEMORY_LIMIT=2Gi
+#
+# ========================================================================================================
+# BC Registries Database Connection Parameters:
+# 
+# Following are the connection parameters specific to the BC Registries database.
+# Before you deploy the related deployment configuration into your OpenSihift environment
+# update these parameters with the appropriate values.
+# DO NOT commit the values to the repository.
+# --------------------------------------------------------------------------------------------------------
+DATABASE_NAME=`Update with the database name.  Values are case sensitive.`
+DATABASE_SCHEMA=`Update with the schema name.  Values are case sensitive.`
+DATABASE_CATALOG=`Update with the database catalogue name.  Typically the listener service name.  Values are case sensitive.`
+DATABASE_HOST=`Update with the host name and port number.  Port number is required.  You may need to use the host IP address.`
+# ========================================================================================================

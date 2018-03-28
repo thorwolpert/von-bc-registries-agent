@@ -10,11 +10,21 @@
 # POSTGRESQL_USER=[a-zA-Z_][a-zA-Z0-9_]{10}
 # POSTGRESQL_PASSWORD=[a-zA-Z0-9_~!@#$%^&*()-=<>,.?;:|]{16}
 # FDW_NAME=bc_registries_wrapper
-# FDW_FOREIGN_SCHEMA=COLIN_MGR_UAT
-# FDW_FOREIGN_SERVER=142.34.88.17:1521/CUAT.bcgov
 # FDW_USER=[a-zA-Z_][a-zA-Z0-9_]{10}
 # FDW_PASS=[a-zA-Z0-9_~!@#$%^&*()-=<>,.?;:|]{16}
 # FDW_SCHEMA=bc_registries
 # IMAGE_NAMESPACE=devex-von-bc-registries-agent-tools
 # SOURCE_IMAGE_NAME=postgresql-oracle-fdw
 TAG_NAME=prod
+#
+# ========================================================================================================
+# BC Registries Database Connection Parameters:
+# 
+# Following are the connection parameters specific to the BC Registries database.
+# Before you deploy the related deployment configuration into your OpenSihift environment
+# update these parameters with the appropriate values.
+# DO NOT commit the values to the repository.
+# --------------------------------------------------------------------------------------------------------
+FDW_FOREIGN_SCHEMA=`Update with the schema name.  Values are case sensitive.`
+FDW_FOREIGN_SERVER=`Update with connection string information.  [HostName|HostIpAddress]:PortNumber/ListenerServiceName Values are case sensitive.`
+# ========================================================================================================
