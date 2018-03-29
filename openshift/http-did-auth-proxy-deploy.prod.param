@@ -5,6 +5,6 @@
 #=========================================================
 # NAME=http-did-auth-proxy
 # SOURCE_IMAGE_NAMESPACE=devex-von-bc-registries-agent-tools
-# SOURCE_IMAGE_TAG=dev
+TAG_NAME=prod
 # PORT=8080
 # MEMORY_LIMIT=512Mi

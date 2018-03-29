@@ -66,7 +66,7 @@
               "from": {
                 "kind": "ImageStreamTag",
                 "namespace": "${SOURCE_IMAGE_NAMESPACE}",
-                "name": "${NAME}:${SOURCE_IMAGE_TAG}"
+                "name": "${NAME}:${TAG_NAME}"
               }
             }
           }
@@ -134,7 +134,7 @@
       "value": "devex-von-bc-registries-agent-tools"
     },
     {
-      "name": "SOURCE_IMAGE_TAG",
+      "name": "TAG_NAME",
       "displayName": "Environment TAG name",
       "description": "The TAG name for this environment, e.g., dev, test, prod",
       "required": true,
